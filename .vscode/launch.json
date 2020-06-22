@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deno debugger",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": [
+        "run",
+        "--inspect",
+        "--allow-net",
+        "--allow-read",
+        "--allow-write",
+        "--config",
+        "tsconfig.json",
+        "index.ts"
+      ],
+      "port": 9229
+    }
+  ]
+}
